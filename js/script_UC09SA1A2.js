@@ -38,7 +38,6 @@ function validaCampos() {
         todasRegras = false;
     }
     
-
     var sportsList = document.getElementsByName("sport");
     var marcado = false
     if(sportsList[0].checked) {
