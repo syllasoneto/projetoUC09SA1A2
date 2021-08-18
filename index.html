@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <script src="./js/script_UC09SA1A2.js"></script>
+    <script src="./js/scriptUC09SA1A2.js"></script>
   </head>
   <body>
     Nome:
@@ -15,11 +15,9 @@
       <input id="month" type="text" maxlength="2">/
       <input id="year" type="text" maxlength="4">
       <br>
-    <form>
     CPF:
-      <input id="cpf" type="text" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Informar CPF no formato NNN.NNN.NNN-NN">
+      <input id="cpf" type="text" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
       <br>
-    </form>
     Time do coração:
       <select id="team_id" maxlength="20">
         <option id="1">Time 1</option>
@@ -35,9 +33,9 @@
      <input type="checkbox" name="sport" id="5">Automobilismo<br>
      <input type="checkbox" name="sport" id="6">Artes Marciais<br>
      <input type="checkbox" name="sport" id="7">Natação<br>
-     <input type="submit" value="Validar Formulário" onclick="validaCampos();">
-     <input type="submit" value="Gera JSON" onclick="retornaJSON();">
+     <input type="submit" value="Validar Formulário" onclick="validaFormulario();">
+     <input type="submit" value="Gerar JSON" onclick="geraJson();">
      <br>
-     <p id="resultado">a</p>
+     <p id="pResultado"></p>
   </body>
 </html>
