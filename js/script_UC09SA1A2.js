@@ -9,27 +9,34 @@ function validaFormulario() {
 
     var sportList = document.getElementsByName("sport");
     var sportListSelected = [];
-    if(sportList[0].checked) {
-        sportListSelected.push(sportList[0].id);
+
+    for(var i = 0; i<sportList.length; i++){
+        if(sportList[i].checked) {
+            sportListSelected.push(sportList[i].id);
+        } 
     }
-    if(sportList[1].checked) {
-        sportListSelected.push(sportList[1].id);
-    }
-    if(sportList[2].checked) {
-        sportListSelected.push(sportList[2].id);
-    }
-    if(sportList[3].checked) {
-        sportListSelected.push(sportList[3].id);
-    }
-    if(sportList[4].checked) {
-        sportListSelected.push(sportList[4].id);
-    }
-    if(sportList[5].checked) {
-        sportListSelected.push(sportList[5].id);
-    }
-    if(sportList[6].checked) {
-        sportListSelected.push(sportList[6].id);
-    }
+
+    // if(sportList[0].checked) {
+    //     sportListSelected.push(sportList[0].id);
+    // }
+    // if(sportList[1].checked) {
+    //     sportListSelected.push(sportList[1].id);
+    // }
+    // if(sportList[2].checked) {
+    //     sportListSelected.push(sportList[2].id);
+    // }
+    // if(sportList[3].checked) {
+    //     sportListSelected.push(sportList[3].id);
+    // }
+    // if(sportList[4].checked) {
+    //     sportListSelected.push(sportList[4].id);
+    // }
+    // if(sportList[5].checked) {
+    //     sportListSelected.push(sportList[5].id);
+    // }
+    // if(sportList[6].checked) {
+    //     sportListSelected.push(sportList[6].id);
+    // }
 
     var vResultado = false;
 
@@ -93,27 +100,33 @@ function geraJson() {
 
     var sportList = document.getElementsByName("sport");
 
-    if(sportList[0].checked) {
-        obj_form.sport.push(sportList[0].id);
+    for(var i = 0; i<sportList.length; i++){
+        if(sportList[i].checked) {
+            obj_form.sport.push(sportList[i].id);
+        } 
     }
-    if(sportList[1].checked) {
-        obj_form.sport.push(sportList[1].id);
-    }
-    if(sportList[2].checked) {
-        obj_form.sport.push(sportList[2].id);
-    }
-    if(sportList[3].checked) {
-        obj_form.sport.push(sportList[3].id);
-    }
-    if(sportList[4].checked) {
-        obj_form.sport.push(sportList[4].id);
-    }
-    if(sportList[5].checked) {
-        obj_form.sport.push(sportList[5].id);
-    }
-    if(sportList[6].checked) {
-        obj_form.sport.push(sportList[6].id);
-    }
+
+    // if(sportList[0].checked) {
+    //     obj_form.sport.push(sportList[0].id);
+    // }
+    // if(sportList[1].checked) {
+    //     obj_form.sport.push(sportList[1].id);
+    // }
+    // if(sportList[2].checked) {
+    //     obj_form.sport.push(sportList[2].id);
+    // }
+    // if(sportList[3].checked) {
+    //     obj_form.sport.push(sportList[3].id);
+    // }
+    // if(sportList[4].checked) {
+    //     obj_form.sport.push(sportList[4].id);
+    // }
+    // if(sportList[5].checked) {
+    //     obj_form.sport.push(sportList[5].id);
+    // }
+    // if(sportList[6].checked) {
+    //     obj_form.sport.push(sportList[6].id);
+    // }
 
     var vJson = JSON.stringify(obj_form);
     var vResultadoP = document.getElementById("pResultado");
