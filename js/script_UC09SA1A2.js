@@ -131,5 +131,8 @@ function geraJson() {
     var vJson = JSON.stringify(obj_form);
     var vResultadoP = document.getElementById("pResultado");
     vResultadoP.innerHTML = vJson;
-    
+
+
 }
+
+//fim do script
